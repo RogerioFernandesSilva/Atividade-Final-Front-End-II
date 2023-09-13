@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+main {
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+}
+
+.characters-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.character-card {
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1rem;
+  width: 500px;
+  height: 250px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.character-card img {
+  border-radius: 10%;
+  width: 13rem;
+  height: 13rem;
+  margin-right: 1rem;
+}
+
+.character-text {
+  display: flex;
+  flex-direction: column;
+  height: 200px;
+}
+
+.title-character {
+  padding: 0;
+  margin: 10px 0px 0px;
+  font-size: 1.5rem;
+}
+
+.character-card p {
+  margin: 0.5rem 0;
+  color: #666;
+}
+
+.cardStatus {
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin-top: 05px;
+  margin-bottom: 20px;
+}
+
+.dead {
+  background-color: red;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: none;
+  margin-right: 10px;
+}
+
+.alive {
+  background-color: lightgreen;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: none;
+  margin-right: 10px;
+}
+
+.unknown {
+  background-color: lightgray;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  border: none;
+  margin-right: 10px;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#button-back {
+  width: 200px;
+  height: 50px;
+  background-color: greenyellow;
+  border: 1px;
+  border-radius: 100px;
+  font-size: medium;
+  margin-right: 100px;
+  cursor: pointer;
+}
+
+#button-next {
+  width: 200px;
+  height: 50px;
+  background-color: greenyellow;
+  border: 1px;
+  border-radius: 100px;
+  font-size: medium;
+  cursor: pointer;
+}
+
+footer {
+  display: flex;
+  justify-content: center;
+}
+
+footer > img {
+  width: 20rem;
+  height: 20rem;
+}
