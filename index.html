@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API Rick and Morty</title>
+
+    <link rel="stylesheet" href="./css/styles.css" />
+  </head>
+
+  <body>
+    <header>
+      <h1>API de Rick and Morty</h1>
+    </header>
+
+    <main>
+      <div class="characters-list"></div>
+    </main>
+    <section class="buttons">
+      <button id="button-back" onclick="backPage()">Voltar Página</button>
+      <button id="button-next" onclick="nextPage()">Proxima Página</button>
+    </section>
+    <footer>
+      <img
+        src="./imgs/rick-and-morty-portal-shoes-white-clothing-zavvi-23.png"
+        alt="imagem rick and morty"
+      />
+    </footer>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <script src="api.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
