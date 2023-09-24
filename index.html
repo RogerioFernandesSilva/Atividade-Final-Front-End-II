@@ -4,25 +4,34 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>API Rick and Morty</title>
-
-    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./style.css" />
   </head>
-
   <body>
     <header>
       <h1>API de Rick and Morty</h1>
+      <br>
+      <img src="./picture/logo.png" alt="logo rick and morty" id="logo-header" />
+      <form id="query-api">
+        <input
+          type="text"
+          id="character-name"
+          placeholder="Pesquisar por nome"
+        />
+        <button id="btn-search" type="submit">Buscar</button>
+      </form>
     </header>
 
     <main>
       <div class="characters-list"></div>
     </main>
     <section class="buttons">
-      <button id="button-back" onclick="backPage()">Voltar Página</button>
-      <button id="button-next" onclick="nextPage()">Proxima Página</button>
+      <button id="button-back" onclick="backPage()">Back</button>
+      <button id="button-next" onclick="nextPage()">Next</button>
     </section>
+    <div id="current-page"></div>
     <footer>
       <img
-        src="./imgs/rick-and-morty-portal-shoes-white-clothing-zavvi-23.png"
+        src="./picture/rick-and-morty-portal-shoes-white-clothing-zavvi-23.png"
         alt="imagem rick and morty"
       />
     </footer>
